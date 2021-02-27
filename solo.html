@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no">
+    <meta content="email=no" name="format-detection" />
+    <title>舒祺聊职场</title>
+    <meta name="keywords" content="舒祺聊职场" />
+    <meta name="description" content="舒祺聊职场" />
+    <!--css样式开始-->
+    <link href="public/images/favicon.ico" rel="Shortcut Icon" type="image/x-icon">
+    <link href="public/images/favicon.ico" rel="Bookmark" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/common.css">
+    <link rel="stylesheet" href="public/css/channel.css">
+    <link rel="stylesheet" href="public/css/swiper.min.css">
+    <link href="public/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--css样式结束-->
+    <!--js控件开始-->
+    <script type='text/javascript' src="public/js/jquery-1.8.3.min.js"></script>
+    <script type='text/javascript' src="public/js/swiper.min.js"></script>
+    <!--js控件结束-->
+    <script language="javascript">
+        var BASE_URL = 'http://www.liaoshuqi.cn'; //
+        var PUBLIC_URL = 'http://www.liaoshuqi.cn/public';
+        var DATA_URL = 'http://www.liaoshuqi.cn/data';
+    </script>
+</head>
+
+<body>
+    <div class="section section1">
+        <div class="header">
+            <div class="h-con">
+                <div class="logo">
+                    <h1>
+                        <a href="http://www.liaoshuqi.cn"><img src="https://iguoxing.oss-cn-beijing.aliyuncs.com/shuqi/img/logo.png" alt="" /></a>
+                    </h1>
+                </div>
+                <div class="head_right fr">
+                    <img src="public/images/list.png" class="menubtn">
+                    <div class="menu fl" id="menu">
+                        <h1 class="closebtn">×</h1>
+                        <ul>
+                            <li><a href="index.html" class="active">首页<i></i> </a></li>
+                            <li><a href="solo.html">个人成长<i></i> </a></li>
+                            <li><a href="index.html#page3">企业培训<i></i> </a></li>
+                            <li><a href="index.html#page4">创始人<i></i> </a></li>
+                            <li><a href="index.html#page5">关于我们<i></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--head_right-->
+            </div>
+            <!--con-->
+        </div>
+        <!--header-->
+        <script type="text/javascript">
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 500) {
+                        $(".header").addClass("head_active");
+                    } else {
+                        $(".header").removeClass("head_active");
+                    }
+                })
+            })
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $('.menubtn').click(function() {
+                    $('.menu').animate({
+                        right: '-3px'
+                    }, 300);
+                })
+                $('.closebtn').click(function() {
+                    $('.menu').animate({
+                        right: '-230px'
+                    }, 300);
+                })
+            })
+        </script>
+        <div class="mainbanner" style="background: url(public/img/solo-banner.jpg) no-repeat top center;background-size: cover;">
+            <img class="maintext2" src="public/images/online06.png">
+            <p class="mainpara mainpara2">每个人都会遇到瓶颈和困惑。有意思教练致力于通过线上线下培训课程，帮助你提高领导力、沟通力、策略力等软技能，让你拥有更多职场“武器”。</p>
+            <ul class="main_nav">
+                <li><a href="index.html?c=personal&amp;a=index" class="nav_active">线上好课</a></li>
+                <li><a href="http://www.liaoshuqi.cn/?c=personal&a=line">线下活动</a></li>
+                <li><a href="http://www.liaoshuqi.cn/?c=personal&a=disabuse">自我测评</a></li>
+            </ul>
+        </div>
+        <div class="onlinebox01">
+            <img src="public/images/online02.png" class="onl01">
+            <img src="public/images/online03.png" class="onl02">
+            <h1>线上好课</h1>
+            <h2>快速发展的当今社会，终身学习已成趋势。<br> 有意思教练拒绝鼓吹焦虑，专注于陪伴想要不断提升自我、勇于改变的职场人，
+                <br> 经由持续的加深和发展自我认知，在领导力、沟通力、情商、策略力等层面获得成长，成为自己故事里的英雄。 </h2>
+            <div class="onimgbox">
+                <img src="data/uploads/2018/06/07/1528369486.png">
+                <ul class="mind_ul mind_ul01">
+                    <li> <span>新晋经理成长特训营</span>
+                        <div class="hoverbox">
+                            <p>15个管理模型，为你颁发未来领袖的通行证</p>
+                        </div>
+                    </li>
+                    <li> <span><a href="http://wx67810be0ac4639f5.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81ODgwOTE2NzA1ZjhkX0FXcmdRc3h0IiwiYXBwX2lkIjoiYXBwcUplUm5kZUU3MDUwIn0
+" target="_blank" style="color: #666;">5分钟MBA</a></span>
+                        <div class="hoverbox">
+                            <p>50堂职场进阶课，从领导力、高效沟通、战略性思维和决策、自我管理四个方向，将你打造成为职场精英</p>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="mind_ul mind_ul02">
+                    <li> <span><a href="http://wx67810be0ac4639f5.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81YjExMDdiZjhmMWU2XzdVYXRtRGltIiwiYXBwX2lkIjoiYXBwcUplUm5kZUU3MDUwIn0
+" target="_blank" style="color: #666;">用故事讲出你的影响力</a></span>
+                        <div class="hoverbox">
+                            <p>21天，我们手把手教会你如何成为一个能用故事打造你的影响力的，有故事的男/女同学。</p>
+                        </div>
+                    </li>
+                    <li> <span>情商领导力</span>
+                    </li>
+                    <li> <span>转型，为你的人生和职场再定位</span>
+                        <div class="hoverbox">
+                            <p>助你转换职场赛道，实现华丽转身。</p>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="mind_ul mind_ul03">
+                    <li> <span><a href="http://wx67810be0ac4639f5.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81YWY0MDljNmI1ZGI2X1ZtRnRycVZ5IiwiYXBwX2lkIjoiYXBwcUplUm5kZUU3MDUwIn0
+" target="_blank" style="color: #666;">战略性思维之英文邮件沟通 21天训练营</a></span>
+                        <div class="hoverbox">
+                            <p>道术结合+实践反馈+地道英语，从战略沟通的角度手把手教你怎么把一封普通的邮件写出影响力！</p>
+                        </div>
+                    </li>
+                    <li> <span><a href="http://wx67810be0ac4639f5.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81OTgzZDQ2MjQ2NjBjX2djVUtnTGZtIiwiYXBwX2lkIjoiYXBwcUplUm5kZUU3MDUwIn0
+" target="_blank" style="color: #666;">如何低调地自我推销还不招人讨厌？</a></span>
+                        <div class="hoverbox">
+                            <p>教大家如何在职场中推出自己的价值</p>
+                        </div>
+                    </li>
+                    <li> <span><a href="http://wx67810be0ac4639f5.h5.xiaoe-tech.com/content_page/eyJ0eXBlIjozLCJyZXNvdXJjZV90eXBlIjoiIiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81OTgyZTAxYWRmNGUwX1NVRU8zd1NXIiwiYXBwX2lkIjoiYXBwcUplUm5kZUU3MDUwIn0
+" target="_blank" style="color: #666;">用好老板，学会向上管理</a></span>
+                        <div class="hoverbox">
+                            <p>如何管理好你的上级，让老板成为你的伯乐。</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="onlinebox02">
+            <h2>具体信息可扫码关注“有意思微课” 或<br> 咨询客服有意思的小二 (ID：youyisidexiao2)</h2>
+            <div class="ewmbox">
+                <dl>
+                    <dt>
+        <img src="public/images/contact_07.jpg">
+      </dt>
+                    <dd>
+                        <h3>有意思微课</h3>
+                        <p>学习更多技能和知识<br> 助力职业发展
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+        <img src="public/images/contact_03.jpg">
+      </dt>
+                    <dd>
+                        <h3>客服咨询</h3>
+                        <p>咨询请添加客服微信<br> ID：youyisidexiao 2</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="onlinebox03">
+            <img class="deco01" src="public/images/about4po01.png">
+            <h1>过往学员评价</h1>
+
+            <div class="appbox  appbox1" style=" margin-top: 80px;">
+                <div class="con">
+                    <div class="rig">
+                        <img src="data/metadatas/63/14127/1527670940.jpg">
+                    </div>
+                    <div class="lef">
+                        <h1>李源 教练</h1>
+                        <h2>外企副总监</h2>
+                        <p>看大家讨论的一点感受：我们学习不是为了发现他人哪里做的不对不好（当然帮助我们发现他人做得很好是对我们自己的奖励），也不必试图说服对方去学习改变，只是需要让学习过的我们拥有足够的影响力，去影响对方跟我们一起进步！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appbox  appbox2" style=" margin-top: 0px;">
+                <div class="con">
+                    <div class="lef">
+                        <img src="data/metadatas/63/14128/1527671176.jpg">
+                    </div>
+                    <div class="rig">
+                        <h1>Elise Li</h1>
+                        <h2>外企市场经理</h2>
+                        <p>我非常认可有意思教练的课程是因为我特别认可它传递的价值观。不管是Hubert教练还是高琳教练都是非常有意思的人，也特别真诚，感觉他们整个团队都在做自己特别喜欢的事情。 我推荐过很多朋友和同学来上课，我当时就是这么跟他们讲的：“你觉得你的生活有意思吗？如果有的话，请来有意思教练。如果没有的话，请来有意思教练，因为它真的会让你的生活变得更有意思，更有价值。
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appbox  appbox1" style=" margin-top: 0px;">
+                <div class="con">
+                    <div class="rig">
+                        <img src="data/metadatas/63/14144/1528169973.jpg">
+                    </div>
+                    <div class="lef">
+                        <h1>薛东</h1>
+                        <h2>阿里巴巴 阿里云技术培训与认证讲师</h2>
+                        <p>我参加了有次教练从邮件沟通课到高阶的沟通课到讲故事训练营，几乎所有的课程。发现这个课不光是学东西，它真的在改变你的生活。我上完高阶课的时候，就升职了。然而，等我上了故事课之后，发现这个晋升并不是真正想要的，我就跳槽了。 有意思教练的课程在一直帮我去挖掘我的内心，笃定我的价值观。我相信如果跟有意思教练的课一起成长，再过一年两年，我再回头看我今天自己，也一定是非常不一样的。
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appbox  appbox2" style=" margin-top: 0px;">
+                <div class="con">
+                    <div class="lef">
+                        <img src="data/metadatas/63/14145/1528180772.jpg">
+                    </div>
+                    <div class="rig">
+                        <h1>李昊颐</h1>
+                        <h2>教育行业 会员服务经理</h2>
+                        <p>对我影响最大的就是讲故事训练营这门课。对于我来说，最大的收获是我找到了自己内在的自我驱动力。 高琳教练和Hubert教练不仅仅是我的老师，更是我人生方向上的一个指明灯。他们不是直接告诉我在我最困难的时候应该怎么办，而是逐渐去引导我找到最好的那个自己。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section99" id="footerbox">
+
+            <div class="foot or">
+                <div class="foot_right">
+                    <!--
+ -->
+                    <dl>
+                        <dt>
+        <img src="public/images/footewm01.jpg">
+      </dt>
+                        <dd>有意思教练</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+        <img src="public/images/footewm02.jpg">
+      </dt>
+                        <dd>有意思微课</dd>
+                    </dl>
+                </div>
+                <div class="foot_left">
+                    <ul class="footnav">
+                        <li><a href="http://www.liaoshuqi.cn/?c=home&a=index">首页</a></li>
+                        <li><a href="http://www.liaoshuqi.cn/?c=abouts&a=index">关于我们</a></li>
+                        <li><a href="index.html?c=personal&amp;a=index">个人发展</a></li>
+                        <li><a href="http://www.liaoshuqi.cn/?c=personas&a=index">企业服务</a></li>
+                        <li><a href="http://www.liaoshuqi.cn/?c=platforms&a=index">教练平台</a></li>
+                    </ul>
+                    <p class="copyright">Copyright © 北京睿思博意管理咨询有限公司 <a href='http://www.beian.miit.gov.cn' target='_block'>京ICP备05012247号</a></p>
+                </div>
+
+            </div>
+            <!--foot-->
+        </div>
+</body>
+
+</html>

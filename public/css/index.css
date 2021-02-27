@@ -1,5 +1,6 @@
 :root {
-    --main-color: #007aff;
+    --main-color: rgb(32, 73, 103);
+    --header-color: rgba(32, 73, 103, 0.9);
     --pane-padding: 5px 42px;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .head_active {
-    background: var(--main-color);
+    background: var(--header-color);
 }
 
 .head_right {
@@ -229,7 +230,7 @@
 }
 
 .section .teacher-info ul li a {
-    color: #fff
+    color: #fff;
 }
 
 .section .info ul li a:hover {
@@ -299,7 +300,7 @@
 .section3 {
     width: 100%;
     height: 100%;
-    background: #007afff5;
+    background: var(--main-color);
     background-size: cover;
     -ms-behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
     behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
@@ -578,7 +579,7 @@
         width: 900px;
     }
     .section .info {
-        margin-top: 28%
+        margin-top: 28%;
     }
     .section .info p {
         margin: 40px 0px 80px 0px;
@@ -734,7 +735,7 @@
         display: none;
     }
     .section .section-right {
-        width: 100%
+        width: 100%;
     }
     .section .info {
         margin-top: 60px;
@@ -795,7 +796,7 @@
     .foot_left {
         margin-top: 10px;
         width: 100%;
-        margin-left: 0
+        margin-left: 0;
     }
     .footnav {
         display: none;
@@ -832,18 +833,17 @@
     }
     .head_right {
         margin-top: 0;
-        margin-right: 0
+        margin-right: 0;
     }
     .menu {
         /*display: none;*/
         position: fixed;
         width: 220px;
-        ;
         height: 100%;
         background: #fff;
         top: 0;
         right: -230px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, .2)
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
     .menu li {
         font-size: 18px;
@@ -1043,7 +1043,7 @@
         height: 48px;
     }
     .section .teacher-info p {
-        margin: 20px 0 20px 0
+        margin: 20px 0 20px 0;
     }
     .copyright {
         line-height: 18px;
@@ -1052,7 +1052,7 @@
         font-size: 12px;
     }
     .foot_left {
-        margin-top: 0
+        margin-top: 0;
     }
     .foot {
         width: 350px;
