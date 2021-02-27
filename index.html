@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no">
+    <meta content="email=no" name="format-detection" />
+    <title>舒祺聊职场</title>
+    <meta name="keywords" content="舒祺聊职场" />
+    <meta name="description" content="有意思教练" />
+    <!--css样式开始-->
+    <link href="https://zhaoguoxing.com/favicon.ico" rel="Shortcut Icon" type="image/x-icon">
+    <link href="https://zhaoguoxing.com/favicon.ico" rel="Bookmark" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/common.css">
+    <link rel="stylesheet" href="public/css/channel.css">
+    <link rel="stylesheet" href="public/css/swiper.min.css">
+    <link href="public/css/index.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--css样式结束-->
+    <!--js控件开始-->
+    <script type='text/javascript' src="public/js/jquery-1.8.3.min.js"></script>
+    <script type='text/javascript' src="public/js/swiper.min.js"></script>
+    <script type='text/javascript' src="public/js/jquery-ui.min.js"></script>
+    <script type='text/javascript' src="public/js/jquery.fullPage.min.js"></script>
+    <script type='text/javascript' src="public/js/friends630.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            if ($.browser.msie && $.browser.version < 10) {
+                $('body').addClass('ltie10');
+            }
+            $.fn.fullpage({
+                verticalCentered: false,
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                navigation: true,
+                continuousVertical: true,
+                navigationTooltips: ['', '', '', '', '']
+            });
+            // alert($(window).width());
+
+        });
+    </script>
+    <!--js控件结束-->
+    <script language="javascript">
+        var BASE_URL = 'http://www.liaoshuqi.cn'; //
+        var PUBLIC_URL = 'http://www.liaoshuqi.cn/public';
+        var DATA_URL = 'http://www.liaoshuqi.cn/data';
+    </script>
+</head>
+
+<body style="width: 100%;overflow: hidden;">
+    <div class="section section1" style="background:url(public/images/section01_bg.jpg) var(--main-color) no-repeat center center;background-size:cover;">
+        <div class="cover home" id="cover" style="width:100%;">
+            <video id="videoBg" autobuffer="" preload="auto" muted volume="0" loop>
+         <source src="public/images/2.mp4" type="video/mp4" id="shipins">
+    </video>
+        </div>
+        <div class="header">
+            <div class="h-con">
+                <div class="logo">
+                    <h1>
+                        <a href="index.html"><img src="https://iguoxing.oss-cn-beijing.aliyuncs.com/shuqi/img/logo.png" alt="" /></a>
+                    </h1>
+                </div>
+                <div class="head_right fr">
+                    <img src="public/images/list.png" class="menubtn">
+                    <div class="menu fl" id="menu">
+                        <h1 class="closebtn">×</h1>
+
+                        <ul>
+                            <li><a href="index.html#page1" class="active">首页<i></i> </a></li>
+                            <li><a href="index.html#page2">个人成长<i></i> </a></li>
+                            <li><a href="index.html#page3">企业培训<i></i> </a></li>
+                            <li><a href="index.html#page4">创始人<i></i> </a></li>
+                            <li><a href="index.html#page5">关于我们<i></i> </a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <!--head_right-->
+            </div>
+            <!--con-->
+        </div>
+        <!--header-->
+        <script type="text/javascript">
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 500) {
+                        $(".header").addClass("head_active");
+                    } else {
+                        $(".header").removeClass("head_active");
+                    }
+                })
+            })
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $('.menubtn').click(function() {
+                    $('.menu').animate({
+                        right: '-3px'
+                    }, 300);
+                })
+                $('.closebtn').click(function() {
+                    $('.menu').animate({
+                        right: '-230px'
+                    }, 300);
+                })
+            })
+        </script>
+
+    </div>
+    <div class="section section2">
+        <div class="skewbox">
+            <div class="skewcon" style="background: url(public/img/shuqi.png) no-repeat center center;background-size: cover;"></div>
+        </div>
+        <img src="public/images/straimg01.jpg" class="straimg01">
+        <div class="section-right">
+            <div class="info about-info">
+                <h3>个人成长</h3>
+                <p>帮助每一个在职场转折点的人实现弯道超车。</p>
+                <ul>
+                    <li><a href="#">线上训练营</a></li>
+                    <li><a href="#">年度会员</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section section3">
+        <div class="section-left" style="background: no-repeat center center var(--main-color);background-size: cover;">
+            <div class="info person-info">
+                <div class="spe">
+                    <h3>企业培训</h3>
+                    <p>帮助企业培养更好的人才。</p> <span></span><span></span> <span></span><span></span><span></span> <span></span> <span></span>
+                    <ul class="person-btn">
+                        <li><a href="#">主题训练营</a></li>
+                        <li><a href="#">自我管理</a></li>
+                        <li><a href="#">团队管理</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-right" style="background: url(data/uploads/2018/05/29/1527576578.jpg)no-repeat center center;background-size: cover;"></div>
+    </div>
+    <div class="section section4">
+        <div class="skewbox">
+            <div class="skewcon" style="background: url(public/img/shuqi.png) no-repeat top center;background-size: contain;"></div>
+        </div>
+        <div class="section-right">
+            <div class="info company-info">
+                <h3>创始人</h3>
+                <p>廖舒祺老师多年来凭借其扎实的理论功底和丰富的实践经验，遵循教育规律，擅于激发学员内在学习动机，探寻深层需求，深度梳理问题，帮助学员从问题中得到蜕变式成长，在员工个人成长发展、生涯管理和员工及经理职业能力提升有着其独到的见解，并且在课中会透过个性化的现场点评与答疑，促进学员真实表达和自我思考，立即产生行动力的培训效果。舒祺老师更通过独特的体验式教学，让学员向内探索，向外实现，授课温暖，犀利，有穿透力。</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="section section5">
+        <div class="section-left">
+            <div class="info teacher-info">
+                <h3>关于我们</h3>
+                <p></p>
+                <p>我们不仅仅是一个高效交付千人培训的品牌，着力于为转行人构建一个服务生态。</p> <span></span><span></span> <span></span><span></span>
+                <ul>
+                    <li><a href="#">了解详情</a> </li>
+                </ul>
+                <div class="ewmbox">
+                    <img src="public/img/shipinhao.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="skewbox2">
+            <div class="skewcon2" style="background: url(data/uploads/2018/05/29/1527585558.jpg) no-repeat center center;background-size: cover;"></div>
+        </div>
+    </div>
+
+
+    <div class="section99" id="footerbox">
+
+        <div class="foot or">
+            <div class="foot_right">
+                <!--
+ -->
+                <dl>
+                    <dt>
+        <img src="public/images/footewm01.jpg">
+      </dt>
+                    <dd>舒祺聊职场</dd>
+                </dl>
+                <dl>
+                    <dt>
+        <img src="public/images/footewm02.jpg">
+      </dt>
+                    <dd>舒祺聊职场</dd>
+                </dl>
+            </div>
+            <div class="foot_left">
+                <ul class="footnav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">个人成长</a></li>
+                    <li><a href="#">企业培训</a></li>
+                    <li><a href="#">创始人</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+                <p class="copyright">Copyright © 舒祺聊职场 <a href='http://www.beian.miit.gov.cn' target='_block'>晋ICP备2020012780号-2</a></p>
+            </div>
+
+        </div>
+        <!--foot-->
+    </div>
+</body>
+
+</html>

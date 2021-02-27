@@ -1,0 +1,1108 @@
+:root {
+    --main-color: #007aff;
+    --pane-padding: 5px 42px;
+}
+
+.header {
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    _position: absolute;
+    _bottom: auto;
+    _top: expression(eval(document.documentElement.scrollTop));
+    top: 0;
+    left: 0;
+    z-index: 25;
+    transition: all 0.4s;
+}
+
+
+/* background:#22c1c1; */
+
+.header .con {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    margin: 10px 0 0 0px;
+}
+
+.head_active {
+    background: var(--main-color);
+}
+
+.head_right {
+    margin-top: 32px;
+    margin-right: 20px;
+}
+
+.menu {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu li {
+    float: left;
+    margin: 0 21px;
+    line-height: 26px;
+}
+
+.menu li.english a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #01304e;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+}
+
+.menu li a {
+    color: #fff;
+}
+
+.menu li a:hover i {
+    display: block;
+}
+
+.menu li a.active i {
+    display: block;
+}
+
+.menu ul li a i {
+    display: block;
+    font-family: normal;
+    text-align: center;
+    font-style: normal;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 6px;
+    display: none;
+}
+
+.header .h-con {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+.section .section-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.section .section-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.section .info {
+    width: 520px;
+    margin-top: 34%;
+}
+
+.section .company-info {
+    margin-top: 26%;
+}
+
+.section .teacher-info {
+    margin-top: 20%;
+    width: 540px;
+    float: right;
+    margin-right: 80px;
+}
+
+.section .section-left .info {
+    margin-right: 80px;
+    float: right;
+}
+
+.section .section-right .info {
+    margin-left: 80px;
+    float: left;
+}
+
+.section .section-left .person-info {
+    width: 540px;
+    float: right;
+    margin-top: 30%;
+}
+
+.section .person-info .spe {
+    width: 520px;
+    float: right;
+    margin: 0px 80px 120px 0px;
+}
+
+.section .person-info .spe h3 {
+    color: #fff;
+}
+
+.section .person-info .spe p {
+    color: #fff;
+}
+
+.section .info h3 {
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 62px;
+}
+
+.section .teacher-info h3 {
+    color: #fff;
+}
+
+.section .info p {
+    font-size: 18px;
+    line-height: 36px;
+    margin: 70px 0px 120px 0px;
+    color: #444;
+}
+
+.section .teacher-info p {
+    color: #fff;
+    margin: 70px 0px 70px 0px;
+}
+
+.section .info ul li {
+    display: inline-block;
+    border-radius: 20px;
+    width: 130px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 20px;
+}
+
+.section .info ul li a {
+    display: block;
+    border-radius: 20px;
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    display: block;
+    position: absolute;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #7d7d7d;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    background: transparent;
+    transition: all 0.4s ease-in;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.section .info ul li a:before {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #edd530;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    z-index: -1;
+}
+
+.section .teacher-info ul li a {
+    color: #fff
+}
+
+.section .info ul li a:hover {
+    background: #edd530;
+    border: 1px solid #edd530;
+    color: #111;
+}
+
+.section .info ul.person-btn li a {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.section .info ul.person-btn li a:hover {
+    background: #edd530;
+    border: 1px solid #edd530;
+    color: #111;
+}
+
+
+/*.section .info ul.person-btn li a:before{background: transparent;}
+.section .info ul.person-btn li a:hover{background: #fff;border:1px solid #fff;color: #22c1c1;}*/
+
+.section .info ul li a:hover:before {
+    height: 300%;
+    opacity: 1;
+}
+
+.section .info .erweima {
+    margin-top: 100px;
+}
+
+.section .info .erweima dd {
+    width: 250px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section .info .erweima dt {
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    width: 250px;
+    text-align: center;
+}
+
+.section1 {
+    background: url(../images/4.jpg) center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -ms-behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+    behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+}
+
+.section2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -ms-behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+    behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+}
+
+.section3 {
+    width: 100%;
+    height: 100%;
+    background: #007afff5;
+    background-size: cover;
+    -ms-behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+    behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+}
+
+.section4 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -ms-behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+    behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+}
+
+.section5 {
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    background-size: cover;
+    -ms-behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+    behavior: url(http://www.yescoachme.com/public/css/css/backgroundsize.min.htc);
+}
+
+.section6 {
+    height: 200px;
+}
+
+.lunbo {
+    width: 520px;
+    margin-top: 120px;
+}
+
+.section .info ol {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section .info ol li {
+    width: 49.5%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section1_para {
+    font-size: 18px;
+    color: #fff;
+    width: 1025px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.section1_text {
+    position: absolute;
+    width: 1260px;
+    left: 50%;
+    top: 50%;
+    margin-left: -630px;
+    margin-top: -60px;
+}
+
+.vedbtn {
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.mousebtn {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -11px;
+    display: none;
+}
+
+.skewbox {
+    width: 50%;
+    height: 100%;
+    transform: skew(-11deg, 0deg);
+    float: left;
+    overflow: hidden;
+    position: relative;
+    left: -150px;
+    border-right: 5px solid #edd530;
+    box-sizing: border-box;
+}
+
+.skewcon {
+    width: 100%;
+    height: 100%;
+    transform: skew(11deg, 0deg);
+    position: relative;
+    left: 150px;
+}
+
+.straimg01 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section .company-info p {
+    margin: 70px 0px 60px 0px;
+}
+
+.brandbox {
+    margin-top: 90px;
+    width: 660px;
+    position: relative;
+    left: -20px;
+}
+
+.brandbox::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.brandbox span.brand {
+    display: block;
+    width: 240px;
+    height: 76px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.skewbox2 {
+    width: 50%;
+    height: 100%;
+    transform: skew(-10deg, 0deg);
+    float: right;
+    overflow: hidden;
+    position: relative;
+    right: -130px;
+    box-sizing: border-box;
+}
+
+.skewcon2 {
+    width: 100%;
+    height: 100%;
+    transform: skew(10deg, 0deg);
+    position: relative;
+    right: 130px;
+}
+
+.textimg1 {}
+
+.skewcon2::before {
+    display: block;
+    content: "";
+    height: 70px;
+    background: #edd530;
+    width: 100%;
+}
+
+.section5 .section-left {
+    width: 50%;
+    float: left;
+    background: no-repeat top left;
+    background-size: contain;
+}
+
+.ewmbox {
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: 120px;
+}
+
+.menubtn {
+    display: none;
+}
+
+.closebtn {
+    display: none;
+}
+
+.swiper-slide li {
+    width: 220px;
+    height: 90px;
+    float: left;
+}
+
+.aboutbox05 .swiper-button-next {
+    right: -40px;
+}
+
+.aboutbox05 .swiper-button-prev {
+    left: -40px;
+}
+
+@media screen and (max-width: 2000px) {
+    .skewbox {
+        width: 50%;
+        height: 100%;
+        transform: skew(-11deg, 0deg);
+        float: left;
+        overflow: hidden;
+        position: relative;
+        left: -100px;
+        border-right: 5px solid #edd530;
+        box-sizing: border-box;
+    }
+    .skewcon {
+        width: 100%;
+        height: 100%;
+        transform: skew(11deg, 0deg);
+        position: relative;
+        left: 100px;
+    }
+}
+
+.skewbox2 {
+    width: 50%;
+    height: 100%;
+    transform: skew(-10deg, 0deg);
+    float: right;
+    overflow: hidden;
+    position: relative;
+    right: -90px;
+    box-sizing: border-box;
+}
+
+.skewcon2 {
+    width: 100%;
+    height: 100%;
+    transform: skew(10deg, 0deg);
+    position: relative;
+    right: 90px;
+}
+
+.ewmbox {
+    margin-top: 60px;
+}
+
+.section .teacher-info {
+    margin-top: 18%;
+}
+
+@media screen and (max-width: 1800px) {
+    .header .h-con {
+        width: 90%;
+    }
+    .section .info {
+        width: 80%;
+    }
+    .section .info h3 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .header .h-con {
+        width: 90%;
+    }
+    .section .info {
+        width: 80%;
+    }
+    .section .info h3 {
+        font-size: 40px;
+    }
+    .section .company-info {
+        margin-top: 22%;
+    }
+    .textimg1 {
+        width: 1000px;
+        display: block;
+        margin: 0 auto;
+    }
+    .section1_para {
+        width: 900px;
+    }
+    .section .info {
+        margin-top: 28%
+    }
+    .section .info p {
+        margin: 40px 0px 80px 0px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .straimg01 {
+        width: 150px;
+    }
+    .section .info ul li {
+        width: 110px;
+        height: 30px;
+    }
+    .section .info ul li a {
+        display: block;
+        border-radius: 20px;
+        width: 110px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        position: absolute;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+    .section .company-info {
+        margin-top: 22%;
+    }
+    .brandbox {
+        margin-top: 60px;
+        width: 90%;
+    }
+    .brandbox span.brand {
+        width: 180px;
+        height: 57px;
+        margin-right: 10px;
+    }
+    .brandbox span.brand img {
+        width: 100%;
+        height: 100%;
+    }
+    .section .company-info p {
+        margin: 40px 0 50px 0;
+    }
+    .section .teacher-info {
+        margin-top: 12%;
+    }
+    .section .teacher-info p {
+        margin: 40px 0 50px 0;
+    }
+    .ewmbox {
+        margin-top: 40px;
+        width: 180px;
+        height: 252px;
+    }
+    .ewmbox img {
+        width: 100%;
+        height: 100%;
+    }
+    .footnav li {
+        margin-right: 40px;
+    }
+    .footnav li a {
+        font-size: 16px;
+    }
+    .section .person-info .spe {
+        margin: 0;
+        width: 100%;
+    }
+    .section3 .section-right {
+        background-size: 80% !important;
+    }
+    .swiper-slide li {
+        width: 33.3%;
+        height: 80px;
+    }
+    .section .teacher-info p {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .ewmbox {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .header .h-con {
+        width: 90%;
+    }
+    .section .info {
+        width: 80%;
+    }
+    .section .info h3 {
+        font-size: 35px;
+    }
+    .section .section-right .info {
+        margin-left: 30px;
+    }
+    .section .section-left .person-info {
+        margin-right: 30px;
+    }
+    .foot {
+        min-width: 100%;
+    }
+    .foot_left {
+        margin-left: 30px;
+    }
+    .section .section-left .person-info {
+        width: 500px;
+    }
+    .section1_text {
+        width: 85%;
+        margin-left: -42.5%;
+    }
+    .textimg1 {
+        width: 100%;
+    }
+    .section1_para {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .skewbox {
+        width: 100%;
+        transform: skew(0deg, 0deg);
+        left: 0;
+        height: 40%;
+        border-right: none;
+    }
+    .skewcon {
+        transform: skew(0deg, 0deg);
+        left: 0;
+    }
+    .skewbox2 {
+        width: 100%;
+        transform: skew(0deg, 0deg);
+        right: 0;
+        height: 40%;
+        border-right: none;
+        position: absolute;
+        top: 0;
+        height: 40%;
+        left: 0;
+    }
+    .skewcon2 {
+        transform: skew(0deg, 0deg);
+        right: 0;
+    }
+    .straimg01 {
+        display: none;
+    }
+    .mousebtn {
+        display: none;
+    }
+    .section .section-right {
+        width: 100%
+    }
+    .section .info {
+        margin-top: 60px;
+    }
+    .section .section-left {
+        width: 100%;
+    }
+    .section3 .section-right {
+        position: absolute;
+        top: 0;
+        height: 40%;
+        left: 0;
+        background-size: 50% !important;
+    }
+    .section3 .section-left {
+        position: absolute;
+        top: 40%;
+    }
+    .section .section-left .person-info {
+        width: 80%;
+        margin-top: 60px;
+        float: none;
+        margin-left: 30px;
+    }
+    .skewcon2::before {
+        display: none;
+    }
+    .section5 .section-left {
+        position: absolute;
+        top: 40%;
+    }
+    .section5 .section-left .info {
+        width: 50%;
+        float: left;
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    .ewmbox {
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        margin-left: 80px;
+    }
+    .section3 .section-left .info {
+        width: 80%;
+    }
+    .foot {
+        height: 300px;
+    }
+    .foot_right dl {
+        margin-top: 20px;
+    }
+    .foot_right {
+        width: 320px;
+        margin: 0 auto;
+        float: none;
+    }
+    .foot_left {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0
+    }
+    .footnav {
+        display: none;
+    }
+    .copyright {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+    #videoBg {
+        display: none;
+    }
+    .brandbox {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .menubtn {
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+    }
+    .foot {
+        height: 300px;
+    }
+    .section1_para {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .head_right {
+        margin-top: 0;
+        margin-right: 0
+    }
+    .menu {
+        /*display: none;*/
+        position: fixed;
+        width: 220px;
+        ;
+        height: 100%;
+        background: #fff;
+        top: 0;
+        right: -230px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .2)
+    }
+    .menu li {
+        font-size: 18px;
+        float: none;
+        line-height: 36px;
+        margin-bottom: 18px;
+        text-align: right;
+    }
+    .menu li a {
+        color: #333;
+        display: block;
+        width: 100%;
+    }
+    .menu ul li a i {
+        display: none !important;
+    }
+    .menu ul {
+        padding-top: 80px;
+    }
+    .menu li.english a {
+        background: #01304e;
+        color: #fff;
+        font-size: 12px;
+        float: right;
+    }
+    .menu li.english {
+        margin-top: 30px;
+    }
+    .closebtn {
+        position: absolute;
+        display: block;
+        font-size: 38px;
+        color: #ccc;
+        top: 20px;
+        left: 20px;
+    }
+    .skewbox {
+        height: 46%;
+    }
+    .section .info h3 {
+        font-size: 26px;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+    .section .info ul li {
+        width: 33.3%;
+        margin-right: 0;
+        display: block;
+        float: left;
+        margin-bottom: 15px;
+    }
+    .section .info ul::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .section .info ul li a {
+        margin: 0 auto;
+        position: relative;
+        width: 90px;
+    }
+    .section3 .section-right {
+        height: 35%;
+    }
+    .section3 .section-left {
+        top: 35%;
+    }
+    .section .section-left .person-info {
+        margin-top: 30px;
+    }
+    .section4 .skewcon {
+        background-position: 20% 20% !important;
+    }
+    .section .company-info {
+        margin-top: 40px;
+    }
+    .section .company-info p {
+        margin: 30px 0 40px 0;
+    }
+    .brandbox {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        position: static;
+    }
+    .brandbox span.brand {}
+    .skewbox2 {
+        height: 25%;
+    }
+    .skewcon2 {
+        background-position: 20% 30% !important;
+    }
+    .section5 .section-left {
+        top: 25%;
+        z-index: 22;
+    }
+    .ewmbox {
+        position: static;
+        width: 120px;
+        height: 168px;
+        float: left;
+        margin-top: 0;
+        margin-right: 20px;
+        margin-left: 0;
+    }
+    .section5 .section-left .info {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        margin-top: 30px;
+    }
+    .section .teacher-info p {
+        margin: 20px 0 40px 0;
+    }
+    .section5 .section-left .info {
+        margin-top: 30px;
+    }
+    .header {
+        height: 60px;
+    }
+    .logo img {
+        width: 40px;
+    }
+    .menubtn {
+        top: 13px;
+        right: 20px;
+    }
+    .section .info ul li a {
+        margin: 0 auto;
+    }
+    .section .section-right .info {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        margin-top: 7px;
+    }
+    .section .info p {
+        margin: 15px auto;
+    }
+    .section3 .section-left .info {
+        width: 100%;
+        margin: 0;
+    }
+    .section .person-info .spe {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        float: none;
+    }
+    .swiper-slide li {
+        height: 54px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section .info ul li {
+        width: 33.33333%;
+        margin-right: 0;
+        display: block;
+        float: left;
+        margin-bottom: 15px;
+    }
+    .section .info ul li a {
+        margin: 0 auto;
+        position: relative;
+    }
+    .section1_para {
+        font-size: 13px;
+    }
+    .section .info h3 {
+        font-size: 24px;
+    }
+    .section .info {
+        margin-top: 50px;
+    }
+    .section .info p {
+        margin: 40px 0 40px 0;
+    }
+    .section .section-right .info {
+        margin-top: 7px;
+    }
+    .section .company-info p {
+        margin: 20px 0 20px 0;
+    }
+    .section .info p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .brandbox {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 100%;
+        position: static;
+    }
+    .brandbox span.brand {
+        width: 150px;
+        height: 48px;
+    }
+    .section .teacher-info p {
+        margin: 20px 0 20px 0
+    }
+    .copyright {
+        line-height: 18px;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+    .foot_left {
+        margin-top: 0
+    }
+    .foot {
+        width: 350px;
+    }
+    .section .info ul li a {
+        font-size: 14px;
+    }
+    .menubtn {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .section .info h3 {
+        font-size: 20px;
+    }
+    .section .info p {
+        margin: 20px 0 35px 0;
+    }
+    .section .company-info p {
+        margin-bottom: 28px;
+    }
+    .section .company-info {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .brandbox span.brand {
+        width: 100px;
+        height: 32px;
+        margin-right: 3px;
+    }
+    .brandbox {
+        margin-top: 10px;
+        width: 320px;
+        left: -25px;
+    }
+    .section .info p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .section .teacher-info p {
+        margin: 20px 0 15px 0;
+    }
+    .ewmbox {
+        width: 120px;
+        height: 168px;
+        margin-top: 10px;
+    }
+    .foot {
+        width: 100%;
+    }
+}
