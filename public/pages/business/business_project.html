@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no">
+    <meta content="email=no" name="format-detection" />
+    <title>舒祺聊职场-个人成长-企业项目</title>
+    <meta name="keywords" content="舒祺聊职场" />
+    <meta name="description" content="舒祺聊职场" />
+    <!--css样式开始-->
+    <link href="https://iguoxing.oss-cn-beijing.aliyuncs.com/shuqi/img/common/favicon.ico" rel="Shortcut Icon" type="image/x-icon">
+    <link href="https://iguoxing.oss-cn-beijing.aliyuncs.com/shuqi/img/common/favicon.ico" rel="Bookmark" type="image/x-icon">
+    <link rel="stylesheet" href="../../../public/css/common.css">
+    <link rel="stylesheet" href="../../../public/css/channel.css">
+    <link rel="stylesheet" href="../../../public/css/swiper.min.css">
+    <link href="../../../public/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--css样式结束-->
+    <!--js控件开始-->
+    <script type='text/javascript' src="../../../public/js/jquery-1.8.3.min.js"></script>
+    <script type='text/javascript' src="../../../public/js/swiper.min.js"></script>
+    <!--js控件结束-->
+    <script language="javascript">
+        var BASE_URL = 'http://www.liaoshuqi.cn'; //
+        var PUBLIC_URL = 'http://www.liaoshuqi.cn/public';
+        var DATA_URL = 'http://www.liaoshuqi.cn/data';
+    </script>
+    <style>
+        .onimgbox {
+            height: auto;
+            padding-top: 0;
+        }
+        
+        .onimgbox .step {
+            width: 25%;
+        }
+        
+        .onimgbox .info {
+            width: 600px;
+        }
+        
+        .onlinebox01 {
+            margin-bottom: 30px;
+            height: auto;
+        }
+        
+        .onlinebox03 .customers {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0 60px;
+        }
+        
+        .onlinebox03 .customers img {
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section section1">
+        <div class="header">
+            <div class="h-con">
+                <div class="logo">
+                    <h1>
+                        <a href="http://www.liaoshuqi.cn"><img src="https://iguoxing.oss-cn-beijing.aliyuncs.com/shuqi/img/logo.png" alt="" /></a>
+                    </h1>
+                </div>
+                <div class="head_right fr">
+                    <img src="../../../public/images/list.png" class="menubtn">
+                    <div class="menu fl" id="menu">
+                        <h1 class="closebtn">×</h1>
+                        <ul>
+                            <li><a href="../../../index.html">首页<i></i> </a></li>
+                            <li><a href="../solo/solo.html">个人成长<i></i> </a></li>
+                            <li><a href="../business/business.html" class="active">企业培训<i></i> </a></li>
+                            <li><a href="../founder/founder.html">关于我们<i></i> </a></li>
+                            <!-- <li><a href="index.html#page5">关于我们<i></i> </a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!--head_right-->
+            </div>
+            <!--con-->
+        </div>
+        <!--header-->
+        <script type="text/javascript">
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 500) {
+                        $(".header").addClass("head_active");
+                    } else {
+                        $(".header").removeClass("head_active");
+                    }
+                })
+            })
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $('.menubtn').click(function() {
+                    $('.menu').animate({
+                        right: '-3px'
+                    }, 300);
+                })
+                $('.closebtn').click(function() {
+                    $('.menu').animate({
+                        right: '-230px'
+                    }, 300);
+                })
+            })
+        </script>
+        <div class="mainbanner" style="background: url(../../../public/img/solo-banner.jpg) no-repeat top center;background-size: cover;">
+            <!-- <img class="maintext2" src="public/images/online06.png"> -->
+            <p class="mainpara title">企业培训</p>
+            <p class="mainpara mainpara2">舒祺聊职场致力于帮助企业处理职场不同发展阶段人群的关系，通过精品线上、线下课程、训练营等，帮助新员工、高潜员工、储备干部、中层管理干部等，提升个人成长、生涯规划、赋能、核心竞争力、领导力、角色认知、有效沟通等。</p>
+            <ul class="main_nav">
+                <li><a href="business.html">品牌课程</a></li>
+                <li><a href="business_project.html" class="nav_active">企业项目</a></li>
+                <li><a href="business_ask.html">企业咨询</a></li>
+            </ul>
+        </div>
+        <div class="onlinebox01">
+            <img src="../../../public/images/online02.png" class="onl01">
+            <img src="../../../public/images/online03.png" class="onl02">
+            <h1>（一）职场精英进阶系列线上训练营</h1>
+            <h2>
+                由廖舒祺老师及其团队融合10多年职业成长与生涯发展的研究与实践、<br>10000名职场人士学习与应用见证；专为企业人才管理赋能而开发的线上学习项目。 <br>旨在精准解决：职场人士能力系统提升，企业人才整体质量提高，从而打造企业与人才的核心竞争力。
+            </h2>
+            <div class="onimgbox">
+                <img class="info" src="../../../public/img/business/business_model.png">
+                <h1>项目形式</h1>
+                <h2>训练营一： <b>目标营</b>——高效达成目标<br> 训练营二：
+                    <b>学习营</b>——快速学习转化<br> 训练营三：
+                    <b>人脉营</b>——盘活人脉资源<br> 训练营四：
+                    <b>价值营</b>——持续价值提升</h2>
+            </div>
+        </div>
+        <div class="trainbox02">
+            <h1>1、目标营：高效达成目标练就混沌时代的行动派</h1>
+            <div class="con">
+                <h2>课程目标</h2>
+                <p>▪ 清晰和梳理出自己的长、中、短期目标，帮助学员形成成长的内驱力； <br>▪ 通过工具探索内心深处阻碍成长改变的重大假设； <br>▪ 通过建立行动协同系统让学员把有限的精力放在真正重要的事情上； <br>▪ 通过微习惯帮助学员将长期目标分解成每天简单易行的习惯，持续行动，避免半途而废； <br>▪ 找到行动盟友，在相互监督、赋能、鼓励、支持的原则下，共同达成目标，同行走得更远。
+                </p>
+                <br>
+                <h2>产出成果</h2>
+                <p>1、封面故事<br> 2、限制性假设清单 <br>3、SMARTER 目标方案</p>
+                <br>
+                <h2>适合对象</h2>
+                <p>企业全员，重点针对需要提升职场核心竞争力的员工或管理者。</p>
+            </div>
+        </div>
+        <div class="trainbox02">
+            <h1>2、学习营：快速学习转化紧扣事物关键的输出人</h1>
+            <div class="con">
+                <h2>课程目标</h2>
+                <p>▪ 掌握高效学习的系统方法，帮助学员快速吸收关键信息； <br>▪ 养成结构化思考能力，让学员迅速找到解决问题的突破口； <br>▪ 建立学习闭环，帮助学员摆脱自欺欺人式的学习；<br>▪掌握反思复盘的工具，让职场人的经历真正变成核心竞争力。
+                </p>
+                <br>
+                <h2>产出成果</h2>
+                <p>1、工作研读拆解行动计划<br> 2、优质问题集 <br>3、知识多场景化练习记录<br></p>
+                <br>
+                <h2>适合对象</h2>
+                <p>企业全员，重点针对需要提升职场核心竞争力的员工。</p>
+            </div>
+        </div>
+        <div class="trainbox02">
+            <h1>3、人脉营：盘活人脉资源成为善于连接的影响家</h1>
+            <div class="con">
+                <h2>课程目标</h2>
+                <p>▪ 掌控快速识人和洞悉他人需求的方法； <br>▪ 提炼自身优势标签，教你轻松迈出人脉构建第一步；<br>▪ 检视你的职场人脉储备和职场幸福感，有的放矢构建人脉； <br>▪ 掌握跟老板有效沟通的方法，向上有效支撑老板； <br>▪ 掌握跟同级沟通的技巧，建立跨部门的影响力； <br>▪ 主动构建下行人脉，为理想的工作提前做准备； <br>▪ 用幸福竞争力公式助你提升职场幸福感。
+                </p>
+                <br>
+                <h2>产出成果</h2>
+                <p>1、职场人际测评报告 <br>2、沟通应对模式调整方案<br> 3、人脉资源盘点表<br> 4、专家话题集<br></p>
+                <br>
+                <h2>适合对象</h2>
+                <p>重点针对需要提升职场核心竞争力的员工或管理者。</p>
+            </div>
+        </div>
+        <div class="trainbox02">
+            <h1>4、价值营：持续价值提升跃迁认知层次的成长者</h1>
+            <div class="con">
+                <h2>课程目标</h2>
+                <p>▪ 了解和修炼用户视角，能够透过任务读懂需求，学会把职场的琐碎事情做出彩，赢得机会； <br>▪ 练就职场反馈力，从接受任务到完成任务形成做事的闭环，给老板和客户提供掌控感和确定性， 超预期交付工作，把事情做到极致；<br>▪认识和修炼自身核心竞争力，在工作和实践中修炼能力“护城河”； <br>▪ 打造自身内心秩序感的三大支柱，真正习得长期主义的习惯。
+                </p>
+                <br>
+                <h2>产出成果</h2>
+                <p>1、工作需求分析实践记录<br> 2、职场“用户体验感”分析记录<br> 3、能力梳理清单<br> 4、竞争力梳理清单<br> 5、印象复盘表<br> 6、个人年度总结书<br></p>
+                <br>
+                <h2>适合对象</h2>
+                <p>全体员工</p>
+            </div>
+        </div>
+        <div class="onlinebox01">
+            <img src="../../../public/images/online02.png" class="onl01">
+            <h1>（二）项目定制</h1>
+            <h2>
+                1、需求：针对企业需求进行沟通，做需求分析；<br> 2、主题：结合实际情况具体设定线上培训主题； <br>3、课程：依据确定的培训主题设计相应的课程； <br>4、流程：根据课程设计线上训练营的运营流程； <br>5、实施：确定训练营时间人员按流程实施培训；
+            </h2>
+        </div>
+        <div class="onlinebox02">
+            <h2>具体信息可扫码关注“舒祺聊职场” 或<br> 咨询舒祺聊职场小助手 (ID：learningisconnecting)</h2>
+            <div class="ewmbox">
+                <dl>
+                    <dt>
+                        <img src="../../../public/img/shipinhao.jpg">
+                    </dt>
+                    <dd>
+                        <h3>舒祺聊职场</h3>
+                        <p>扫码关注舒祺老师<br> 让你人在职场不迷路
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../../../public/img/zhushou.jpg">
+                    </dt>
+                    <dd>
+                        <h3>客服咨询</h3>
+                        <p>咨询请添加客服微信<br> ID：learningisconnecting</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!-- <div class="onlinebox03">
+            <img class="deco01" src="../../../public/images/about4po01.png">
+            <h1>代表客户</h1>
+            <div class="customers">
+                <img src="../../../public/img/business/customer.png">
+            </div>
+        </div> -->
+        <div class="section99" id="footerbox">
+
+            <div class="foot or">
+                <div class="foot_right">
+                    <dl>
+                        <dt>
+                            <img src="../../../public/img/shipinhao.jpg">
+                        </dt>
+                        <dd>舒祺聊职场</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../../../public/img/zhushou.jpg">
+                        </dt>
+                        <dd>小助手微信</dd>
+                    </dl>
+                </div>
+                <div class="foot_left">
+                    <ul class="footnav">
+                        <li><a href="../../../index.html">首页<i></i> </a></li>
+                        <li><a href="#">个人成长</a></li>
+                        <li><a href="#">企业培训</a></li>
+                        <li><a href="#">创始人</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                    <p class="copyright">Copyright © 舒祺聊职场 <a href='http://www.beian.miit.gov.cn' target='_block'>晋ICP备2020012780号-2</a></p>
+                </div>
+            </div>
+            <!--foot-->
+        </div>
+</body>
+
+</html>
